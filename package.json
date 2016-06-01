@@ -19,7 +19,11 @@
   "engines": {
     "node": ">= 4.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "got": "6.3.0",
+    "is-url": "1.2.1",
+    "micromatch": "2.3.8"
+  },
   "devDependencies": {
     "ava": "^0.15.0",
     "coveralls": "^2.11.9",
