@@ -1,0 +1,35 @@
+{
+  "name": "teamcity-build-queue-info",
+  "version": "0.0.0",
+  "description": "The helper to get info about TeamCity Build Queue.",
+  "license": "MIT",
+  "repository": "blond/teamcity-build-queue-info",
+  "author": "Andrew Abramov <mail@blond.im> (github.com/blond)",
+  "keywords": [
+    "teamcity",
+    "build",
+    "queue",
+    "info"
+  ],
+  "main": "index.js",
+  "files": [
+    "lib/**",
+    "index.js"
+  ],
+  "engines": {
+    "node": ">= 4.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^0.15.0",
+    "coveralls": "^2.11.9",
+    "eslint": "^2.10.2",
+    "eslint-config-pedant": "^0.5.1",
+    "nyc": "^6.4.4"
+  },
+  "scripts": {
+    "pretest": "eslint .",
+    "test": "nyc ava",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls"
+  }
+}
