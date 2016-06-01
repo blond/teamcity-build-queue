@@ -1,9 +1,9 @@
 {
-  "name": "teamcity-build-queue-info",
+  "name": "teamcity-build-queue",
   "version": "0.0.0",
   "description": "The helper to get info about TeamCity Build Queue.",
   "license": "MIT",
-  "repository": "blond/teamcity-build-queue-info",
+  "repository": "blond/teamcity-build-queue",
   "author": "Andrew Abramov <mail@blond.im> (github.com/blond)",
   "keywords": [
     "teamcity",
