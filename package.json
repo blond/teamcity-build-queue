@@ -26,14 +26,23 @@
   },
   "devDependencies": {
     "ava": "^0.15.0",
+    "babel-eslint": "^6.0.4",
     "coveralls": "^2.11.9",
     "eslint": "^2.10.2",
     "eslint-config-pedant": "^0.5.1",
-    "nyc": "^6.4.4"
+    "nyc": "^6.4.4",
+    "proxyquire": "^1.7.9",
+    "sinon": "^1.17.4",
+    "sinon-as-promised": "^4.0.0"
   },
   "scripts": {
     "pretest": "eslint .",
     "test": "nyc ava",
     "coveralls": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "ava": {
+    "require": [
+      "sinon-as-promised"
+    ]
   }
 }
