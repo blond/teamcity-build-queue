@@ -1,6 +1,6 @@
 {
   "name": "teamcity-build-queue",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "The helper to get info about TeamCity Build Queue.",
   "license": "MIT",
   "repository": "blond/teamcity-build-queue",
