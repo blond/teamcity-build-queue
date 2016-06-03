@@ -1,15 +1,11 @@
 'use strict';
 
 const assert = require('assert');
-const url = require('url');
 
 const isUrl = require('is-url');
-const got = require('got');
 
-const loadBuild = require('./lib/load-build');
+const loadBuilds = require('./lib/load-builds');
 const filterBuilds = require('./lib/filter-builds');
-
-const TEAMCITY_BUILD_QUEUE_PATHNAME = 'guestAuth/app/rest/buildQueue';
 
 /**
  * Loads info about TeamCity Build Queue.
@@ -24,17 +20,7 @@ const TEAMCITY_BUILD_QUEUE_PATHNAME = 'guestAuth/app/rest/buildQueue';
 module.exports = (teamcityUrl, options) => {
     assert(isUrl(teamcityUrl), 'You should specify url to TeamCity');
 
-    return got(url.resolve(teamcityUrl, TEAMCITY_BUILD_QUEUE_PATHNAME), { json: true })
-        .then(response => {
-            const body = response.body;
-            const builds = body && body.build || [];
-
-            return Promise.all(builds.map(build => {
-                const buildUrl = url.resolve(teamcityUrl, build.href);
-
-                return loadBuild(buildUrl);
-            }));
-        })
+    return loadBuilds(teamcityUrl)
         .then(builds => filterBuilds(builds, options))
         .then(builds => ({
             builds: builds,
