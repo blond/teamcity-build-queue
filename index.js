@@ -6,7 +6,7 @@ const url = require('url');
 const isUrl = require('is-url');
 const got = require('got');
 
-const load = require('./lib/load-build');
+const loadBuild = require('./lib/load-build');
 const filterBuilds = require('./lib/filter-builds');
 
 const TEAMCITY_BUILD_QUEUE_PATHNAME = 'guestAuth/app/rest/buildQueue';
@@ -32,7 +32,7 @@ module.exports = (teamcityUrl, options) => {
             return Promise.all(builds.map(build => {
                 const buildUrl = url.resolve(teamcityUrl, build.href);
 
-                return load(buildUrl);
+                return loadBuild(buildUrl);
             }));
         })
         .then(builds => filterBuilds(builds, options))
