@@ -61,26 +61,21 @@ test('should not ignore builds without wait reason', t => {
     t.deepEqual(filteredBuilds, [{ state: 'queued' }]);
 });
 
-test('should ignore builds without info about compatible agents', t => {
-    const builds = [{ state: 'queued' }];
-    const filteredBuilds = filter(builds, { ignoreIncompatibleAgents: true });
-
-    t.deepEqual(filteredBuilds, []);
-});
-
-test('should not ignore builds without info about compatible agents if state is not queued', t => {
-    const builds = [{ state: 'started' }];
-    const filteredBuilds = filter(builds, { ignoreIncompatibleAgents: true });
-
-    t.deepEqual(filteredBuilds, [{ state: 'started' }]);
-});
-
 test('should ignore builds without compatible agents', t => {
     const builds = [
-        { state: 'queued', compatibleAgents: [] },
-        { state: 'queued', compatibleAgents: [{ id: '1' }] }
+        {
+            state: 'queued',
+            waitReason: 'This build will not start because there are no compatible agents which can run it'
+        },
+        {
+            state: 'queued',
+            waitReason: 'The build should start shortly.'
+        }
     ];
     const filteredBuilds = filter(builds, { ignoreIncompatibleAgents: true });
 
-    t.deepEqual(filteredBuilds, [{ state: 'queued', compatibleAgents: [{ id: '1' }] }]);
+    t.deepEqual(filteredBuilds, [{
+        state: 'queued',
+        waitReason: 'The build should start shortly.'
+    }]);
 });

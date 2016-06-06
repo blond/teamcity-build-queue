@@ -20,9 +20,12 @@
     "node": ">= 4.0"
   },
   "dependencies": {
+    "debug": "2.2.0",
     "got": "6.3.0",
     "is-url": "1.2.1",
-    "micromatch": "2.3.8"
+    "micromatch": "2.3.8",
+    "ms": "0.7.1",
+    "promise.prototype.finally": "1.0.1"
   },
   "devDependencies": {
     "ava": "^0.15.0",
