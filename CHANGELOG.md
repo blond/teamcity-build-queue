@@ -1,6 +1,23 @@
 Changelog
 =========
 
+v1.1.1 (2016-07-17)
+-------------------
+
+### Dependencies
+
+* Updated `micromatch` to `v2.3.11`.
+* Updated `is-url` to `v1.2.2`.
+
+### Commits
+
+* [[`b8730c6`](https://github.com/blond/teamcity-build-queue/commit/b8730c6)] - chore(package): update micromatch to version 2.3.11 (@greenkeeperio-bot)
+* [[`5a93a4c`](https://github.com/blond/teamcity-build-queue/commit/5a93a4c)] - chore(package): update nyc to version 7.0.0 (@greenkeeperio-bot)
+* [[`0877bad`](https://github.com/blond/teamcity-build-queue/commit/0877bad)] - chore(package): update eslint-config-pedant to version 0.7.0 (@greenkeeperio-bot)
+* [[`19f6807`](https://github.com/blond/teamcity-build-queue/commit/19f6807)] - chore(package): update eslint to version 3.0.0 (@greenkeeperio-bot)
+* [[`c4420c5`](https://github.com/blond/teamcity-build-queue/commit/c4420c5)] - chore(package): update is-url to version 1.2.2 (@greenkeeperio-bot)
+* [[`113f9fd`](https://github.com/blond/teamcity-build-queue/commit/113f9fd)] - chore(package): update micromatch to version 2.3.10 (@greenkeeperio-bot)
+
 v1.1.0 (2016-06-06)
 -------------------
 
