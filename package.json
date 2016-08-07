@@ -28,7 +28,7 @@
     "promise.prototype.finally": "1.0.1"
   },
   "devDependencies": {
-    "ava": "^0.15.0",
+    "ava": "^0.16.0",
     "babel-eslint": "^6.0.4",
     "coveralls": "^2.11.9",
     "eslint": "^3.0.0",
