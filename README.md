@@ -107,13 +107,13 @@ Read more about it in [micromatch](https://github.com/jonschlinkert/micromatch#f
 
 #### options.ignoreDependencies
 
-Type: `string` Default: `false`
+Type: `boolean` Default: `false`
 
 To ignore builds with dependencies that have not been built yet.
 
 #### options.ignoreIncompatibleAgents
 
-Type: `string` Default: `false`
+Type: `boolean` Default: `false`
 
 To ignore builds without compatible agents.
 
