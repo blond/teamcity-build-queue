@@ -1,6 +1,19 @@
 Changelog
 =========
 
+v1.1.2 (2016-08-31)
+-------------------
+
+### Dependencies
+
+* Updated `promise.prototype.finally` to `v2.0.0`.
+
+### Commits
+
+* [[`dd3bbff`](https://github.com/blond/teamcity-build-queue/commit/dd3bbff)] - chore(package): update nyc to version 8.1.0 (@greenkeeperio-bot)
+* [[`03e427b`](https://github.com/blond/teamcity-build-queue/commit/03e427b)] - Update README.md (@blond)
+* [[`ef8b49f`](https://github.com/blond/teamcity-build-queue/commit/ef8b49f)] - chore(package): update ava to version 0.16.0 (@greenkeeperio-bot)
+
 v1.1.1 (2016-07-17)
 -------------------
 
