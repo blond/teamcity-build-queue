@@ -1,6 +1,19 @@
 Changelog
 =========
 
+v1.1.3 (2016-10-30)
+-------------------
+
+### Dependencies
+
+* Updated `ms` to `v0.7.2`.
+* Updated `promise.prototype.finally` to `v2.0.1`.
+
+### Commits
+
+* [[`3753301`](https://github.com/blond/teamcity-build-queue/commit/3753301)] - chore(lint): remove `babel-eslint` (@blond)
+* [[`dba941a`](https://github.com/blond/teamcity-build-queue/commit/dba941a)] - chore(package): update eslint-config-pedant to version 0.8.0 (@greenkeeperio-bot)
+
 v1.1.2 (2016-08-31)
 -------------------
 
