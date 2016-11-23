@@ -20,7 +20,7 @@
     "node": ">= 4.0"
   },
   "dependencies": {
-    "debug": "2.3.2",
+    "debug": "2.3.3",
     "got": "6.6.3",
     "is-url": "1.2.2",
     "micromatch": "2.3.11",
