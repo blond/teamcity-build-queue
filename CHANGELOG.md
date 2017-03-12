@@ -1,6 +1,15 @@
 Changelog
 =========
 
+v1.1.4 (2017-03-12)
+-------------------
+
+### Dependencies
+
+* Updated `ms` to `v0.7.3`.
+* Updated `got` to `v6.7.1`.
+* Updated `debug` to `v2.6.1`.
+
 v1.1.3 (2016-10-30)
 -------------------
 
