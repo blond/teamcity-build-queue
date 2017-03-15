@@ -34,7 +34,7 @@
     "eslint-config-pedant": "^0.8.0",
     "nyc": "^10.0.0",
     "proxyquire": "^1.7.9",
-    "sinon": "^1.17.4",
+    "sinon": "^2.0.0",
     "sinon-as-promised": "^4.0.0"
   },
   "scripts": {
