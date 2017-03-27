@@ -19,7 +19,7 @@ test('should return json', async t => {
 });
 
 test('should throw error', t => {
-    t.context.gotStub.rejects('err');
+    t.context.gotStub.rejects();
 
-    t.throws(t.context.load('url'), 'err');
+    t.throws(t.context.load('url'));
 });
