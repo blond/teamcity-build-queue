@@ -34,17 +34,11 @@
     "eslint-config-pedant": "^0.8.0",
     "nyc": "^10.0.0",
     "proxyquire": "^1.7.9",
-    "sinon": "^1.17.4",
-    "sinon-as-promised": "^4.0.0"
+    "sinon": "^2.1.0"
   },
   "scripts": {
     "pretest": "eslint .",
     "test": "nyc ava",
     "coveralls": "nyc report --reporter=text-lcov | coveralls"
-  },
-  "ava": {
-    "require": [
-      "sinon-as-promised"
-    ]
   }
 }
