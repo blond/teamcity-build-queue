@@ -18,8 +18,8 @@ test('should return json', async t => {
     t.deepEqual(info, { res: 'bla' });
 });
 
-test('should throw error', t => {
+test('should throw error', async t => {
     t.context.gotStub.rejects();
 
-    t.throws(t.context.load('url'));
+    await t.throws(t.context.load('url'));
 });
