@@ -25,7 +25,7 @@
     "is-url": "1.2.2",
     "micromatch": "2.3.11",
     "ms": "1.0.0",
-    "promise.prototype.finally": "2.0.1"
+    "promise.prototype.finally": "3.0.0"
   },
   "devDependencies": {
     "ava": "^0.25.0",
