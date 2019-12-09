@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "debug": "2.6.6",
-    "got": "6.7.1",
+    "got": "10.0.3",
     "is-url": "1.2.2",
     "micromatch": "2.3.11",
     "ms": "1.0.0",
